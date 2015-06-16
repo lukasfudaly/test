@@ -1,30 +1,30 @@
+<!DOCTYPE html>
 <html>
 <head>
-  
-    <script type="text/javascript" charset="utf-8" src="js/cordova.js"></script>
-    <script type="text/javascript" charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    @media only screen and (max-width: 480px){
+        .emailButton{
+            max-width:600px !important;
+            width:100% !important;
+        }
 
-    // Wait for device API libraries to load
-    //
-    document.addEventListener("deviceready", onDeviceReady, false);
-
-    // device APIs are available
-    //
-    function onDeviceReady() {
-        var element = document.getElementById('deviceProperties');
-        element.innerHTML = 'Device Model: '    + device.model    + '<br />' +
-                            'Device Cordova: '  + device.cordova  + '<br />' +
-                            'Device Platform: ' + device.platform + '<br />' +
-                            'Device UUID: '     + device.uuid     + '<br />' +
-                            'Device Version: '  + device.version  + '<br />';
+        .emailButton a{
+            display:block !important;
+            font-size:18px !important;
+        }
     }
-
-    </script>
-
-
-
+  </style>
 </head>
 <body>
-    <p id="deviceProperties">Loading device properties...</p>
+
+<table border="0" cellpadding="0" cellspacing="0" class="emailButton" style="border-radius:3px; background-color:#6DC6DD;">
+    <tr>
+        <td align="center" valign="middle" class="emailButtonContent" style="padding-top:15px; padding-right:30px; padding-bottom:15px; padding-left:30px;">
+            <a href="..." target="_blank" style="color:#FFFFFF; font-family:Helvetica, Arial, sans-serif; font-size:16px; font-weight:bold; text-decoration:none;">Buy Now</a>
+        </td>
+    </tr>
+</table
+
 </body>
 </html>
